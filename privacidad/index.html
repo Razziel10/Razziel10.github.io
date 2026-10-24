@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Mia: Agenda</title>
+<meta name="description" content="Qué hace Mia: Agenda con tus datos: la voz se procesa en el celular, tus tareas quedan en el celular y la IA es opcional.">
+<style>
+  :root {
+    --fondo: #fff8f0; --texto: #2b2420; --suave: #6f625a; --linea: #eadfd3;
+    --acento: #9a6233; --caja: #fdf1e4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo: #1d1916; --texto: #efe7df; --suave: #b5a89d; --linea: #3a322c;
+      --acento: #e0a26c; --caja: #2a231e; color-scheme: dark; }
+  }
+  body { margin: 0; background: var(--fondo); color: var(--texto);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 68ch; margin: 0 auto; padding: 32px 18px 64px; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 2em 0 .4em; color: var(--acento); }
+  p, li { margin: .4em 0; }
+  .fecha { color: var(--suave); margin: 0 0 1.5em; }
+  .resumen { background: var(--caja); border: 1px solid var(--linea); border-radius: 12px; padding: 4px 18px; }
+  a { color: var(--acento); }
+  table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--linea); }
+  th { color: var(--suave); font-weight: 600; }
+  .tabla { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de privacidad de Mia: Agenda</h1>
+  <p class="fecha">Mia: Agenda con tu Mascota · Android (ar.coria.mia) · Vigente desde el 24 de octubre de 2026</p>
+
+  <div class="resumen">
+    <p><strong>En pocas palabras:</strong></p>
+    <ul>
+      <li>La app no tiene cuentas de usuario ni servidores propios: <strong>tus tareas quedan en tu celular</strong>.</li>
+      <li>Tu voz se convierte en texto <strong>dentro del celular, sin internet</strong>. El audio no se guarda ni se envía a ningún lado.</li>
+      <li>La inteligencia artificial es <strong>opcional y viene apagada</strong>. Si la activás con tu propia clave, el texto de tu pedido se envía al proveedor que elijas (Anthropic o Google).</li>
+      <li>No vendemos datos, no usamos publicidad ni herramientas de análisis, y no pedimos ubicación ni contactos.</li>
+    </ul>
+  </div>
+
+  <h2>Quién es el responsable</h2>
+  <p>Mia: Agenda la desarrolla Juan Pablo Coria (Buenos Aires, Argentina). Para cualquier consulta sobre esta política o tus datos, escribí a <a href="mailto:mia.agenda.app@gmail.com">mia.agenda.app@gmail.com</a>.</p>
+
+  <h2>Tu voz</h2>
+  <p>La app usa el micrófono solo cuando tocás a la mascota para hablarle (o cuando le contestás una pregunta). El reconocimiento de voz se hace con un modelo que viene dentro de la app y funciona sin conexión. El audio se procesa en el momento y se descarta: no se graba, no se guarda y no se envía.</p>
+
+  <h2>Tus tareas y ajustes</h2>
+  <p>Las notas, los recordatorios, las categorías, el nombre de tu mascota y tus ajustes se guardan solamente en el almacenamiento privado de la app, en tu celular. Nosotros no tenemos acceso a ellos.</p>
+  <p>Si tenés activada la copia de seguridad de Android, el sistema puede incluir estos datos en tu copia en tu cuenta de Google, como hace con otras apps. Esa copia la gestiona Google según tu configuración.</p>
+  <p>La app también guarda en el celular, para tu uso: las frases que no entendió (para que puedas revisarlas) y cuántos tokens usó la inteligencia artificial. Nada de eso sale del celular.</p>
+
+  <h2>Inteligencia artificial (opcional)</h2>
+  <p>Viene desactivada. Solo funciona si vos la activás en Ajustes y pegás una clave de API propia de Anthropic (Claude) o de Google (Gemini). Esa clave se guarda cifrada en el almacenamiento seguro de Android y solo se usa para hablar con el proveedor que elegiste.</p>
+  <p>Cuando la mascota consulta a la IA, el celular envía directamente al proveedor, por una conexión cifrada (HTTPS):</p>
+  <div class="tabla">
+  <table>
+    <tr><th>Qué se envía</th><th>Claude (Anthropic)</th><th>Gemini (Google)</th></tr>
+    <tr><td>Lo que dijiste (el texto, no el audio)</td><td>Sí</td><td>Sí</td></tr>
+    <tr><td>Fecha y hora actuales</td><td>Sí</td><td>Sí</td></tr>
+    <tr><td>Nombres de tus categorías</td><td>Sí</td><td>Sí</td></tr>
+    <tr><td>Tus tareas pendientes (texto, categoría y fecha, hasta 40)</td><td>Sí, para entender a cuál te referís</td><td>No</td></tr>
+  </table>
+  </div>
+  <p>Nosotros no recibimos ni guardamos nada de esto: viaja del celular al proveedor. Lo que el proveedor haga con esos datos se rige por sus propias condiciones: <a href="https://www.anthropic.com/legal/privacy">política de privacidad de Anthropic</a> y <a href="https://policies.google.com/privacy">política de privacidad de Google</a>. La capa gratuita de Gemini puede usar lo que recibe para mejorar los productos de Google; por eso, con Gemini, la app no envía tu lista de tareas.</p>
+  <p>Podés desactivar la IA o borrar tu clave en cualquier momento desde Ajustes.</p>
+
+  <h2>Permisos que pide la app y para qué</h2>
+  <ul>
+    <li><strong>Micrófono:</strong> para hablarle a la mascota.</li>
+    <li><strong>Notificaciones:</strong> para avisarte de tus recordatorios.</li>
+    <li><strong>Alarmas y recordatorios exactos:</strong> para que el aviso llegue a la hora justa.</li>
+    <li><strong>Mostrar sobre otras apps</strong> y <strong>servicio en primer plano:</strong> solo si activás la mascota flotante, para que la rayita quede en el borde de la pantalla mientras usás otras apps y puedas hablarle desde ahí.</li>
+    <li><strong>Iniciar al encender el celular:</strong> para volver a programar tus avisos después de un reinicio.</li>
+    <li><strong>Reloj del celular:</strong> si lo activás, las alarmas y temporizadores que pidas se crean en la app Reloj de tu celular.</li>
+    <li><strong>Internet:</strong> solo para la inteligencia artificial, si la activás.</li>
+  </ul>
+  <p>Compartir tu lista (por ejemplo, por WhatsApp) o anotar algo que compartiste desde otra app solo ocurre cuando vos lo hacés.</p>
+
+  <h2>Lo que no hacemos</h2>
+  <ul>
+    <li>No tenemos servidores que reciban tus datos.</li>
+    <li>No usamos publicidad, herramientas de análisis ni seguimiento.</li>
+    <li>No vendemos ni compartimos datos con terceros (fuera de lo que vos enviás a la IA, si la activás).</li>
+    <li>No accedemos a tu ubicación, contactos, fotos ni archivos.</li>
+  </ul>
+
+  <h2>Cómo borrar tus datos</h2>
+  <p>Podés borrar tareas y categorías desde la app. Para borrar todo, desinstalá la app o, en Ajustes de Android → Apps → Mia: Agenda → Almacenamiento, tocá "Borrar datos". Como no guardamos tus datos en ningún servidor, no hay nada más que borrar de nuestro lado. Para lo enviado a un proveedor de IA, consultá su política.</p>
+
+  <h2>Menores de edad</h2>
+  <p>La app no está dirigida a menores de 13 años y no recolecta datos de ellos a sabiendas.</p>
+
+  <h2>Seguridad</h2>
+  <p>Tus datos quedan en el espacio privado de la app, al que otras apps no pueden acceder. La clave de IA se guarda cifrada. Las conexiones con los proveedores de IA son siempre cifradas.</p>
+
+  <h2>Cambios en esta política</h2>
+  <p>Si la app cambia (por ejemplo, si en el futuro incluye publicidad o compras), vamos a actualizar esta página antes de que el cambio llegue a la app, con su nueva fecha de vigencia.</p>
+
+  <h2>Contacto</h2>
+  <p><a href="mailto:mia.agenda.app@gmail.com">mia.agenda.app@gmail.com</a></p>
+</main>
+</body>
+</html>
